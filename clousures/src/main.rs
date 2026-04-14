@@ -1,10 +1,15 @@
 fn main() {
-    let counter = 0;
-    let mut inc = || {
-        counter += 1;
-        println!("Counter: {}", counter);
-    };
+    // let mut counter = 0;
+    // let mut inc = || {
+    //     counter += 1;
+    //     println!("Counter: {}", counter);
+    // };
 
-    inc();
-    inc();
+    // inc();
+    // inc();
+
+    let x = String::from("Hello");
+    let consume_and_retunn_x = || x;
+    let y = consume_and_retunn_x();
+    println!("y: {}", y);
 }
